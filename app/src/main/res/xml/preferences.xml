@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="General">
+        <ListPreference
+            android:key="background"
+            android:title="Background"
+            android:summary="Choose the background"
+            android:entries="@array/background_options"
+            android:entryValues="@array/background_values"
+            android:defaultValue="0"
+            android:icon="@drawable/settings"/>
+    </PreferenceCategory>
+</PreferenceScreen>

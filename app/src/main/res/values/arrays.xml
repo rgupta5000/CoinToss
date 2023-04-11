@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="background_options">
+        <item>Background 1</item>
+        <item>Background 2</item>
+        <item>Background 3</item>
+    </string-array>
+
+    <string-array name="background_values">
+        <item>bg_1</item>
+        <item>bg_2</item>
+        <item>bg_3</item>
+    </string-array>
+</resources>

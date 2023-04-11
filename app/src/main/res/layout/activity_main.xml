@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize"
+    android:background="@drawable/bg_1"
+    tools:context=".MainActivity">
+
+    <!-- Add a button to trigger the coin toss function -->
+    <Button
+        android:id="@+id/coin_toss_button"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:text="Toss the Coin!"
+        android:elevation="0dp"
+        android:textColor="@android:color/black"
+        android:backgroundTint="@android:color/holo_orange_light"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/coin_image_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/about_button"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:text="Credits"
+        android:elevation="0dp"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/holo_orange_light"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/coin_image_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="106dp"/>
+
+
+    <!-- Add an ImageView to display the coin toss result -->
+    <ImageView
+        android:id="@+id/coin_image_view"
+        android:layout_height="500dp"
+        android:layout_width="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/coin_image"
+        android:layout_marginTop="16dp"
+        android:longClickable="true"
+        android:contentDescription="@string/coin_toss_result_description" />/>
+
+
+
+    <FrameLayout
+        android:id="@+id/about_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/coin_image_view" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
